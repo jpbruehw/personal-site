@@ -29,8 +29,8 @@
 }
 
 .intro-description {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   background-color: whitesmoke;
   width: 70vw;
   border: 1px solid black;
@@ -46,13 +46,13 @@
   width: 70vw;
   background-image: url("../assets/education-timeline-v2.svg");
   border: black 1px solid;
+  box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.5);
 }
 
 #education-timeline-container {
   padding: 1%;
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
-  box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.5);
 }
 
 .timeline__component {

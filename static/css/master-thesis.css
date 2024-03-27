@@ -1,0 +1,24 @@
+.masters-thesis-container {
+  background-color: whitesmoke;
+  width: 70vw;
+  border: 1px solid black;
+  box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.5);
+  padding: 1%;
+  margin-bottom: 5vh;
+}
+
+.thesis-description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.thesis-info {
+  width: 60%;
+}
+
+.thesis-video {
+  width: 40%;
+}
