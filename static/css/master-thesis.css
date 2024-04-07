@@ -1,24 +1,31 @@
 .masters-thesis-container {
   background-color: whitesmoke;
-  width: 70vw;
+  width: 80vw;
   border: 1px solid black;
   box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.5);
-  padding: 1%;
+  padding: 1% 2%;
   margin-bottom: 5vh;
 }
 
 .thesis-description {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .thesis-info {
-  width: 60%;
+  width: 100%;
 }
 
 .thesis-video {
-  width: 40%;
+  width: 100%;
+  height: 60vh;
+  border: 1px solid black;
+}
+
+.video-content {
+  width: 100%;
+  height: 100%;
 }
