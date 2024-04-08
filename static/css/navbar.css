@@ -1,0 +1,26 @@
+#navbar-top {
+  background-color: whitesmoke;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  color: black;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: black;
+  transform: scale(1.035);
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.active {
+  color: whitesmoke !important;
+  border-radius: 0 !important;
+  border: black 1px solid;
+  background-color: #1c0140 !important;
+}

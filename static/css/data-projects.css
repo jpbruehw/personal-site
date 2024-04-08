@@ -38,27 +38,28 @@
   transform: scale(1.025);
 }
 
-/* .card-body-container {
-  height: 275px;
-} */
 .card-body-style {
   padding: 3%;
   height: 200px;
+}
+
+@media (min-width: 1250px) {
+  .card-body-style {
+    height: 180px;
+  }
 }
 
 @media (max-width: 1250px) {
   .card-style {
     width: 45%;
   }
-  /* .card-body-style {
-    height: 200px;
-  } */
 }
 
 @media (max-width: 1000px) {
   .data-projects-container {
     width: 90vw;
   }
+
   .card-style {
     width: 55%;
   }

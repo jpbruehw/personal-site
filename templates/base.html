@@ -17,11 +17,24 @@
     <link rel="stylesheet" href="../static/css/body.css" />
     <link rel="stylesheet" href="../static/css/master-thesis.css" />
     <link rel="stylesheet" href="../static/css/data-projects.css" />
+    <link rel="stylesheet" href="../static/css/about.css" />
+    <link rel="stylesheet" href="../static/css/education-timeline.css" />
+    <link rel="stylesheet" href="../static/css/tech-skills.css" />
     <script src="https://unpkg.com/jquery"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="../static/js/techScroll.js"></script>
   </head>
   <body>
-    {% include '/navbar.html' %} {% block content %} {% endblock %}
+    {% include '/navbar.html' %}
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-top"
+      data-bs-root-margin="0px 0px -30%"
+      data-bs-smooth-scroll="true"
+      tabindex="0"
+    >
+      {% block content %} {% endblock %}
+    </div>
   </body>
 </html>

@@ -1,24 +1,9 @@
 {% extends 'base.html' %} {% block content %}
 <div class="homepage-container">
-  <div class="opener-about-container">
-    <div class="img-about">
-      <img
-        src="../static/assets/headshot-name-img-v2.svg"
-        class="headshot-img"
-        alt="headshot banner"
-      />
-    </div>
-  </div>
-  <div class="intro-description">
-    <article class="intro-article">
-      <h1>Hi there.</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id blanditiis
-        eveniet, totam eius amet dolore ab in, expedita ducimus magni laboriosam
-        dolorem, quo suscipit at officiis iusto natus reiciendis quidem.
-      </p>
-    </article>
-  </div>
+  <!-- about me section -->
+  {% include './about.html' %}
+  <!-- tech skills section -->
+  {% include './tech-skills.html' %}
   <!-- data project overview section -->
   {% include './data-projects.html' %}
   <!-- thesis description overview -->

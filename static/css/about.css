@@ -1,0 +1,29 @@
+.opener-about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot-img {
+  max-width: 80vw;
+}
+
+.img-about {
+  box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.5);
+  border: 1px solid black;
+}
+
+.intro-description {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: whitesmoke;
+  width: 80vw;
+  border: 1px solid black;
+  box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.5);
+}
+
+.intro-article {
+  padding: 1%;
+}
