@@ -1,0 +1,5 @@
+.write-up-title-allit {
+  text-decoration: underline;
+  -webkit-text-stroke: 1px black; /* Set the width and color of the border */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+}

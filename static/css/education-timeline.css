@@ -67,3 +67,18 @@
 .timeline__paragraph {
   line-height: 1.5;
 }
+
+@media (max-width: 1000px) {
+  .education-timeline-section {
+    width: 90vw;
+  }
+
+  .timeline__component {
+    overflow: hidden;
+    font-size: 0.65rem;
+  }
+
+  .timeline__title {
+    font-size: small;
+  }
+}
