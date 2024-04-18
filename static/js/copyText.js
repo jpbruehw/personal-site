@@ -9,11 +9,16 @@ $(document).ready(() => {
     }
   }
 
-  // get elements we want to add events to
+  // copy functionality for code button
   const codeContent = $("#code-text").text();
   const codeButton = $("#code-copy");
+  const timeOutFun = () =>
+    setTimeout(() => {
+      codeButton.text("Copy");
+    }, 5000);
   codeButton.on("click", () => {
     copyResult(codeContent);
     codeButton.text("Copied");
+    timeOutFun();
   });
 });
