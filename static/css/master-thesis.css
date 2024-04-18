@@ -7,6 +7,10 @@
   margin-bottom: 5vh;
 }
 
+.thesis-desc-header {
+  text-align: center;
+}
+
 .thesis-description {
   display: flex;
   flex-direction: column;

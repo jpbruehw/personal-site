@@ -4,7 +4,6 @@
 $(document).ready(() => {
   // select scrollers
   const scrollers = $(".scroller");
-  console.log("PRINT SCROLLER: ", scrollers);
 
   // function to perform animation
   const addAnimation = () => {

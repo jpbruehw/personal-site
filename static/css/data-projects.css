@@ -20,7 +20,7 @@
   justify-content: flex-start;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 3%;
+  padding: 3% 0.5%;
 }
 
 .card-style {

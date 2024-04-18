@@ -1,0 +1,86 @@
+<div class="roc-utilities-container" id="roc-utilities">
+  <div class="roc-utilities-content">
+    <h1 style="text-align: center; margin-bottom: 20px">
+      Research ROC Utilities Project Creator
+    </h1>
+    <h4 style="text-align: center; margin-bottom: 20px">
+      👉
+      <a href="https://github.com/jpbruehw/research-roc-utils" target="_blank"
+        >GitHub</a
+      >
+      👈
+    </h4>
+    <article>
+      <p>
+        <b>ROC analysis has never been easier!</b> Since the groundbreaking work
+        of
+        <a
+          href="https://pubs.rsna.org/doi/epdf/10.1148/radiology.148.3.6878708"
+          target="_blank"
+          >Hanley and McNeil</a
+        >, the popularity of Receiver Operating Characteristic (ROC) curve and
+        Area Under the Operating Characteristic (AUROC) analysis has exploded in
+        popularity. Originally used in medicine to test diagnositc
+        methodologies, AU-/ROC analysis has now been widely adopted in academia
+        and industry for comparing two binary classification models against each
+        other. While popular packages like
+        <a href="https://scikit-learn.org/stable/" target="_blank">sklearn</a>
+        offer functionalities for creating
+        <a
+          href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html"
+          target="_blank"
+          >ROC curves</a
+        >
+        and calculating
+        <a
+          href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.auc.html"
+          target="_blank"
+          >AUROC</a
+        >, there is a hole in the market for complex analysis methods. The
+        functionalities offered in this package are adopted directly from some
+        of the best researchers who use these analysis techniques.
+      </p>
+      <p>
+        Research ROC Utilities offers comprehensive functionality for binary
+        classification models such as threshold optimizations, z-score analysis,
+        t-test analysis, calculating non-parametric AUROC scores, creating
+        stacked ROC curves, bootstrapped resampling AUROC P-Value analysis, and
+        more. Try this code sample!
+        <i>Sample code might not work properly with iPython console.</i>
+      </p>
+    </article>
+    <div class="code-container">
+      <pre
+        class="code-display"
+      ><code class="python" id="code-text"># install package in environment
+!pip install research-roc-utils
+        
+# load packages
+import research_roc_utils.roc_utils as ru
+from scipy.stats import kendalltau
+        
+# set up data
+y_true = [0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0]
+y_pred_1 = [0.1, 0.8, 0.4, 0.3, 0.9, 0.5, 0.3, 0.8, 0.5, 0.3, 0.2]
+        
+# get threshold
+threshold = ru.optimal_threshold(y_true, y_pred_1)
+        
+print("Optimal Threshold: ", threshold)
+print("-------------------------------")
+        
+# non-parametric AUROC
+auroc = ru.auroc_non_parametric(y_true, y_pred_1)
+        
+print("\nAUROC Score: ", auroc)
+print("-------------------------------")
+        
+# get z-score for two models
+y_pred_2 = [0.3, 0.6, 0.7, 0.25, 0.45, 0.5, 0.6, 0.5, 0.2, 0.3, 0.5]
+z_score = ru.roc_z_score(y_true, y_pred_1, y_pred_2, kendalltau)
+        
+print("\nZ-Score : ", z_score)</code></pre>
+      <button id="code-copy" class="copy-code-button">Copy</button>
+    </div>
+  </div>
+</div>
