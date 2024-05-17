@@ -1,27 +1,69 @@
 <div id="masters-thesis" class="masters-thesis-container">
-  <h1 class="thesis-desc-header">All that glitters is gold?</h1>
+  <h1 class="thesis-desc-header">
+    Machine Learning: All that glitters is gold?
+  </h1>
   <div class="thesis-description">
     <article class="thesis-info">
-      <h5>Master's Thesis: Predicting Recessions with Machine Learning</h5>
+      <h5 style="text-align: center">
+        Predicting Recessions with Machine Learning
+      </h5>
       <p>
         Until recently, logit and probit models have been the gold standard for
-        econometric analysis. This long-standing practice is being challenged by
-        more complex and powerful machine learning models. However, my thesis
-        shows that caution is always the best approach and that there is no
-        one-size-fits all approach.
-        <strong>Check out this short video highlighting the results.</strong>
+        econometric analysis. However, we are now living in a world of big data,
+        so it begs the question whether our forecasting methodologies should be
+        updated as well to reflect this new reality. This thesis conducts a
+        horse race to determine whether machine learning models outperform
+        traditional logistic regression models. By using a novel ranking and
+        bootstrapped AUROC scores, the analysis provides further evidence that
+        machine learning models are better at predicting recessions than
+        traditional logistic models.
+      </p>
+      <p style="text-align: center; margin-bottom: 0">
+        <b
+          >Check out the whole paper as well as the source code right here!👇</b
+        >
+      </p>
+      <div class="thesis-links">
+        <a
+          href="https://github.com/jpbruehw/predicting-us-recession-with-ml"
+          target="_blank"
+          >GitHub</a
+        >
+
+        <a
+          href="https://drive.google.com/file/d/1xIuXDUn-J9_CYk0OdG4s8mzdy6GQNIZm/view?usp=sharing"
+          target="_blank"
+          >Read Paper</a
+        >
+      </div>
+    </article>
+  </div>
+  <div class="thesis-preview">
+    <article class="abstract">
+      <h5 style="text-align: center">Abstract</h5>
+      <p>
+        This paper conducts a comprehensive horse race between several popular
+        machine learning models and compares their performances with a
+        traditional logistic regression model at predicting US recessions. Each
+        model is tested at three-, six-, nine-, 12-, and 18-month horizons. A
+        gradient boosting, random forest, support vector classifier, feedforward
+        neural network, and custom consensus model are all compared against the
+        logistic regression model. A dataset spanning 1962-2023 using six
+        leading indicators is used for training and testing the models. The
+        predictive ability of each model is evaluated using two scoring
+        methodologies. The first scoring methodology is a novel ranking system
+        using accuracy, precision, recall, F1, and AUROC scores. The second
+        scoring methodology uses bootstrapped AUROC scores to perform a
+        one-sided test on every model pair across each horizon. The results
+        strongly suggest the gradient boosting, random forest and consensus
+        models are generally superior at recession classification across
+        horizons in comparison to the logistic regression model. The evidence
+        for outperforming the logistic regression model is significantly weaker
+        for the neural network and support vector classifier models. Finally,
+        based on the findings of the consensus model, the results indicate
+        combining the predictions of multiple models can produce better
+        recession predictions than relying on the outputs of a single model.
       </p>
     </article>
-    <div class="thesis-video">
-      <iframe
-        src="https://www.youtube.com/embed/LKKoDBs1gM0?si=pwVzKk5HN4YWdP7Z"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        class="video-content"
-      ></iframe>
-    </div>
   </div>
 </div>
