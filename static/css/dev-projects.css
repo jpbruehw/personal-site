@@ -78,6 +78,20 @@
   justify-content: space-around;
 }
 
+.jobworx-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 1250px) {
   .card-body-style {
     height: 180px;

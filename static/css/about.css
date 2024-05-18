@@ -28,6 +28,42 @@
   padding: 1% 2%;
 }
 
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2vh;
+}
+
+.contact-links-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-links-container > div {
+  margin-right: 1vw;
+  margin-top: 1vh;
+}
+
+.link-img {
+  height: 35px;
+}
+
+.email-link {
+  display: inline;
+  color: #0000ee;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.email-link-clicked {
+  color: #1c0140;
+}
+
 @media (max-width: 1000px) {
   .headshot-img {
     width: 90vw;
