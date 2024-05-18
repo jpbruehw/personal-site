@@ -1,5 +1,4 @@
-import os
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 
 # initialize the app
 app = Flask(__name__)
@@ -15,4 +14,4 @@ def home():
     return render_template('home.html', title=title)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
